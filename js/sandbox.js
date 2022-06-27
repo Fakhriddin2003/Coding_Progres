@@ -36,6 +36,7 @@ const getLocation = async (ip) => {
                 `;
                 console.log(output);
                 })
+                // New commit
         )
 }
 
