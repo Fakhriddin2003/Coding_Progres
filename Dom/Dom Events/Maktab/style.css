@@ -1,0 +1,46 @@
+body {
+    min-height: 100vh;
+}
+
+#sidebar {
+    width: 260px;
+    background: linear-gradient(to right top, #99aca0, #8ea4b9);
+    color: white;
+    transition: 0.3s;
+    overflow: hidden;
+    position: relative;
+    left: 0;
+}
+
+.hide {
+    left: -100% !important;
+    display: none;
+}
+
+#rightside {
+    flex: 1;
+}
+
+header {
+    background-color: rgb(213, 219, 219);
+}
+
+.content {
+    background-color: #f3e7e7;
+    height: calc(100vh - 54px);
+}
+
+#sidebar.list-group {
+    border-radius: 0 !important;
+}
+
+#sidebar .list-group-item {
+    border-radius: 10px !important;
+    margin-bottom: 10px;
+    background-color: #2a4432;
+    color: rgb(212, 212, 212);
+}
+
+#sidebar.list-group.active {
+    background-color: #1423a5;
+}

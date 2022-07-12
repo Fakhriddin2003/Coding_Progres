@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maktab</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body onload="loaded()" class="d-flex" onkeyup="keyUp(event)">
+    <div id="sidebar" class="px-3 py-5">
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                Bosh Sahifa
+            </a>
+            <a href="#" class="list-group-item list-group-item-action" >O'qituvchilar</a>
+            <a href="#" class="list-group-item list-group-item-action">O'quvchilar</a>
+            <a href="#" class="list-group-item list-group-item-action">Xodimlar</a>
+            <a href="#" class="list-group-item list-group-item-action">Fanlar</a>
+            <a href="#" class="list-group-item list-group-item-action">Xonalar</a>
+            <a href="#" class="list-group-item list-group-item-action">Dars Jadvallari</a>
+
+        </div>
+    </div>
+    <div id="rightside">
+        <header class="px-4 py-2">
+            <button class="btn" onclick="toggleSidebar()"><i class="fas fa-bars"></i></button>
+            <input type="search" id="search">
+        </header>
+        <div class="content p-5">
+            <div class="d-flex justify-content-between">
+                <h2>Bo'limlar</h2>
+                <h2 id="selected"></h2>
+            </div>
+            <div class="row text-center fw-bold mt-4" id="cards">
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="shadow bg-white rounded p-5" id="teacher">O'qituvchilar</div>
+                   
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="shadow bg-white rounded p-5" id="student">O'quvchilar</div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="shadow bg-white rounded p-5">Xodimlar</div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="shadow bg-white rounded p-5">Fanlar</div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="shadow bg-white rounded p-5">Xonalar</div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="shadow bg-white rounded p-5">Dars Jadvallari</div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+    <script src="index.js"></script>
+</body>
+
+</html>
