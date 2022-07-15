@@ -3,7 +3,7 @@ const sidebar = document.getElementById("sidebar");
 const cards = document.getElementById("cards")
 const selected = document.getElementById("selected")
 const teacher = document.getElementById("teacher")
-const student = document.getElementById("student")
+
 const search = document.getElementById("search")
 console.log(cards);
 const toggleSidebar = () => {
@@ -21,15 +21,11 @@ for (const card of cards.children) {
         selected.innerHTML = menu
     }
 }
-teacher.onclick = function () {
-    if (teacher.innerHTML) alert('Berdiqulov Zafar, He is Math teacher and he lives in Olmazor, Osoyishta street,N60.')
+function myFunction(){
+    let element = document.body;
+    element.classList.toggle("dark-mode")
+    console.log(element);
 }
-student.onclick = function () {
-    if (student.innerHTML) alert('Soipov Doniyor, He is student, studies PDP academy and Doniyor lives in Yunusabad, Zarbuloq street, N10 ')
-}
-
-
-
 
 
 

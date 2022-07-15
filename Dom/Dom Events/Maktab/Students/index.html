@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="search">
+        <input type="text" onkeyup="myFunction()" id="myInput" placeholder="Search for names">
+    </div>
+
+    <div id="table">
+        <table class="table " id="myTable">
+            <thead>
+                <tr>
+                    <th scope="col">Students</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Surname</th>
+                    <th scope="col">Specialist</th>
+                    <th scope="col">Address</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Jasur</td>
+                    <td>Akramov</td>
+                    <td>Tarix</td>
+                    <td> <button id="address">Manzilni Ko'rsat</button></td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Baxodir</td>
+                    <td>Malikov</td>
+                    <td>Musiqa</td>
+                    <td> <button id="address1">Manzilni Ko'rsat</button></td>
+
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Sardor</td>
+                    <td>Sodiqov</td>
+                    <td>Adabiyot</td>
+                    <td> <button id="address2">Manzilni Ko'rsat</button></td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Hurshid</td>
+                    <td>Madaminbekov</td>
+                    <td>Mehnat</td>
+                    <td> <button id="address3">Manzilni Ko'rsat</button></td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>Jamshid</td>
+                    <td>Akbarov</td>
+                    <td>Fizika</td>
+                    <td> <button id="address4">Manzilni Ko'rsat</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+    <script src="index.js"></script>
+</body>
+
+</html>

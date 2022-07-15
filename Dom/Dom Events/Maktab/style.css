@@ -1,6 +1,13 @@
 body {
-    min-height: 100vh;
-}
+    background-color: rgb(120, 7, 250);
+    color: rgb(7, 7, 7);
+font-size: 22px;
+ }
+  
+   .dark-mode {
+     background-color: rgb(21, 240, 13);
+    color: rgb(226, 24, 24);
+  } 
 
 #sidebar {
     width: 260px;
@@ -19,6 +26,7 @@ body {
 
 #rightside {
     flex: 1;
+   
 }
 
 header {
@@ -43,4 +51,8 @@ header {
 
 #sidebar.list-group.active {
     background-color: #1423a5;
+}
+a {
+    text-decoration: none;
+    color: rgb(53, 45, 45);
 }

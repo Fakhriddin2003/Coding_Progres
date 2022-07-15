@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(156, 179, 194);
+}
+*{
+    box-sizing: border-box;
+}
+.search{
+    text-align: center;
+}
+#address{
+    background-color: rgb(106, 135, 173);
+}
+#address1{
+    background-color: rgb(106, 135, 173);
+}
+#address2{
+    background-color: rgb(106, 135, 173);
+}
+#address3{
+    background-color: rgb(106, 135, 173);
+}
+#address4{
+    background-color: rgb(106, 135, 173);
+}
+
