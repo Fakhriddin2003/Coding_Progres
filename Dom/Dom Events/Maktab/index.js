@@ -21,10 +21,21 @@ for (const card of cards.children) {
         selected.innerHTML = menu
     }
 }
-function myFunction(){
-    let element = document.body;
-    element.classList.toggle("dark-mode")
-    console.log(element);
+
+function darkMode() {
+    const header = document.getElementById("header").style.background = "#30363d"
+    const sidebar = document.getElementById("sidebar").style.background = "#30363d"
+    const content = document.getElementById("content").style.background = "#30363d"
+    const text = document.getElementById("text").style.color = "white"
+    const btn = document.getElementById("btn").style.color = "white"
+}
+
+function whiteMode() {
+    const header = document.getElementById("header").style.background = "rgb(213, 219, 219)"
+    const sidebar = document.getElementById("sidebar").style.background = "linear-gradient(to right top, #99aca0, #8ea4b9)"
+    const content = document.getElementById("content").style.background = "#f3e7e7"
+    const text = document.getElementById("text").style.color = "black"
+    const btn = document.getElementById("btn").style.color = "black"
 }
 
 
