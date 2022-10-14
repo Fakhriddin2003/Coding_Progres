@@ -13,6 +13,53 @@ const toggleSidebar = () => {
 const keyUp = (event) => {
     if (event.key == "Escape") sidebar.classList.add("hide")
 }
+// Bo'limlarni shakillantirish
+const sections = [{
+        title: "O'qituvchilar",
+        link: "#"
+    },
+    {
+        title: "O'quvchilar",
+        link: "#"
+    },
+    {
+        title: "Hodimlar",
+        link: "#"
+    },
+    {
+        title: "Fanlar",
+        link: "#"
+    },
+    {
+        title: "Xonalar",
+        link: "#"
+    },
+    {
+        title: "Dars Jadvallari",
+        link: "#"
+    },
+    {
+        title: "Sinflar",
+        link: "#"
+    }
+];
+
+// const setCards = () => {
+//     cards.innerHTML = "";
+//     sections.map((section) => {
+//         console.log(section);
+
+//         const col = document.createElement("div")
+//         col.className = "col-md-6 col-lg-4 mb-3";
+
+//         const link = document.createElement("a")
+//         link.href = section.link;
+//         link.innerHTML = section.title;
+//         col.appendChild(link)
+//         cards.appendChild(col)
+//     })
+// }
+// setCards();
 for (const card of cards.children) {
     console.log(card.children[0]);
     card.children[0].ondblclick = () => {
